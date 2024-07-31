@@ -1,0 +1,70 @@
+.cabeçalho__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    padding: 1em;
+}
+
+
+.cabeçalho{
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.cabeçalho__pesquisa{
+    width: 200px;
+    height: 10px;
+    background-color: transparent;
+    border: 1.5px solid var(--preto);
+    color: var(--preto);
+    border-radius: 22px;
+    padding: 1em;
+}
+
+.cabeçalho__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0.5em 0em 0.5em 1.3em;
+    color: var(--branco);
+    background: url("../img/Lupa.svg") no-repeat;
+    background-position: 0em;
+    background-size: 12px 12px;
+}
+
+.menu-lista{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--verde);
+    font-weight: 500;
+}
+
+.container__botao:checked~ .menu-lista{
+    display: block;
+}
+
+.container__botao{
+    display: none;
+}
+
+.menu-lista__topico{
+    padding: 1em;
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+    

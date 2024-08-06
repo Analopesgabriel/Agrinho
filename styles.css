@@ -1,12 +1,16 @@
 @import url("styles/header.css");
 @import url("styles/carrossel.css");
-
+@import url("styles/pesquisa.css");
+@import url("styles/corpo.css");
+@import url("styles/footer.css");
+@import url("styles/contato.css");
 
 
 :root {
-    --cor-de-fundo: #EBECEE;
+    --cor-de-fundo: #FFFFFF;
     --branco: #FFFFFF;
-    --verde: #00AE07;
+    --cinza: #ebeceead;
+    --verde: #069F00;
     --preto: #000000;
     --fonte-principal: "DM Sans";
 }
@@ -14,7 +18,14 @@
 body {
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 140%;
 }
 
+@media screen and (min-width: 1024px)
+{
+    body {
+        font-size: 20px;
+    }
+}

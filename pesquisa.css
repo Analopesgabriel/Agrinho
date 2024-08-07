@@ -2,7 +2,7 @@
     text-align: center;
     background-color: var(--cinza);
     border-radius: 15px;
-    margin: 0.5em;
+    margin: 1em;
 }
 .barradepesquisa__título__mobile{
     padding: 0.5em;
@@ -40,13 +40,6 @@
 
 @media screen and (min-width: 1024px) /*código otimizado para telas de tablet e acima*/
 {
-    .barradepesquisa{
-        text-align: center;
-        background-color: var(--cinza);
-        border-radius: 15px;
-        margin: 0.5em;
-    }
-
     .barradepesquisa__título__mobile , .barradepesquisa__caixa{
         display: none;
     }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="stortcut icon" href="img/logo_alternativo.1.png" type="image/x-icon">
 </head>
@@ -103,11 +104,11 @@
                  Com seus produtos artesanais, como geleias e condimentos, ela atende seis mercados regionais da rede Condor,
                   além de comercializar sua mercadoria, também, em Curitiba.
             </p>
-            <section class="corpodosite__fotodupla">
+            <div class="corpodosite__fotodupla">
                 <img src="img/doces.jpeg" alt="doces" class="corpodosite__fotodupla__foto">
                 <img src="img/pimenta.jpeg" alt="pimenta" class="corpodosite__fotodupla__foto">
-            </section>
-            <p>
+            </div>
+            <p class="final">
                 Por fim, aproveitamos o momento e perguntamos sua opinião sobre um tema que muito abordamos
                 no Rural Atual: "Qual a relação entre o campo, a cidade e as oportunidades de vida?".
                 sr. Lúcia usou a si mesma como exemplo, deixando a mensagem de que o campo produz tudo, e sem
@@ -115,17 +116,45 @@
                 entram neste ponto, onde o cuidado, o trabalho e a cidade nos permitem transformar e apreciar os frutos
                  e possibilidades que o campo nos proporciona.
             </p>
-     
-      
-        </div>
     </section>
+
     <section class="contato">
         <h2 class="contato__titulo">Converse conosco!</h2>
         <h3 class="contato__texto">Tem alguma sujestão de conteúdo ou gostaria de compartilher ideias?</h3>
         <input type="email" placeholder="Aguardamos seu e-mail!" class="contato__caixa">
     </section>
     <section class="carrossel">
+        <h2 class="carrossel__titulo">Você pode se interessar</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <a href="#"><img src="img/dia de campo 2.jpeg" alt="" class="slide__img"></a>
+     </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/pecuária.jpeg" alt="" class="slide__img"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/agricultor.jpeg" alt="" class="slide__img"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/dia de campo.jpeg" alt="" class="slide__img"></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="img/preço.jpeg" alt="" class="slide__img"></a>
+      </div>
 
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+   </div>
 
     </section>
 
@@ -144,6 +173,22 @@
         </ul>
     </footer>
     <hr>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 15,
+            slidesPerView: 3,
+            pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            },
+            navigation: { 
+            nextEl: ".swiper-button-next", 
+            prevEl: ".swiper-button-prev",
+            },
+            
+          });
+    </script>
 </body>
 
 </html>

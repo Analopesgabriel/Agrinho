@@ -32,6 +32,10 @@ p{
     .corpodosite__imagem{
         max-width: 35%;
     }
+
+    .corpodosite__fotodupla__foto{
+        width: 25%;
+    }
 }
 
 .corpodosite__fotodupla{

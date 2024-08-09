@@ -3,4 +3,4 @@ Os fatos apresentados são verídicos e inclusive, foi uma experiência que agre
 
 Utilizamos barras de pesquisa, diversas imagens, um carrossel com acontecimentos regionais e dedicamos um bom tempo à responsividade e à pesquisa.
 
-As imagens e pastas CSS não estão organizadas em pastas por conta da dificuldade do github-pages e do Vercel em lê-las.
+As imagens e arquivos CSS não estão organizadas em pastas por conta da dificuldade do Github-pages e do Vercel em lê-las.

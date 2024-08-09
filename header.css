@@ -1,7 +1,7 @@
 .cabeçalho__menu{
     width: 24px;
     height: 24px;
-    background-image: url("../img/Menu.svg");
+    background-image: url("Menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,7 +77,7 @@
             font-weight: 500;
             padding-left: 2em;
             color: var(--branco);
-            background: url("../img/Lupa.svg") no-repeat;
+            background: url("Lupa.svg") no-repeat;
             background-position: 0em;
             background-size: 12px 12px;
             background-position-x: 0.3em ;
